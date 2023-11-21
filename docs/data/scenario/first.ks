@@ -1,6 +1,6 @@
 *start
 
-[title name="走るか寝るかするメロス"]
+[title name="怒れセリヌンティウス"]
 [hidemenubutton]
 [wait time=200]
 [freeimage layer="base"]
@@ -24,14 +24,35 @@
 
 [cm]
 
+[link target=*tag_sleepall] →そのまま寝る [endlink][r]
+[link target=*tag_rerun] →奇跡的に起きて走りだす [endlink][r]
+[s]
+
+*tag_sleepall
+
+[cm]
+
 [bg storage=sleep.jpg time=500]
 
-メロスは死んだように深く眠った。[l][r]
+メロスは死んだように深く眠り続けた。[l][r]
 勇者は、ひどく赤面した。[r]
 
 【 BAD END 】[l][cm]
 
 [jump target=*start]
+
+*tag_rerun
+
+[bg storage=run.jpg time=500]
+
+[cm]
+メロスは黒い風のように奇跡的に起き上がってちょうどよい仮眠となり走り出した。[l][r]
+陽は、ゆらゆら地平線に没し、まさに最後の一片の残光も、消えようとした時、メロスは疾風の如く刑場に突入した。間に合った。[r]
+
+【 GOOD END 】[l][cm]
+
+[jump target=*start]
+
 
 *tag_run
 
